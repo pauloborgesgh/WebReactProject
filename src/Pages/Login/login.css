@@ -1,0 +1,97 @@
+.centerM {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  /* background: linear-gradient(135deg, #1e3c72 10%, #3d78dd 90%); */
+  border-radius: 10px;
+  
+}
+
+.login-container {
+  display: flex;
+  width: 60%;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.login-section,
+.register-section {
+  flex: 1;
+  padding: 40px;
+}
+
+.login-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.login-section h1 {
+  margin-bottom: 24px;
+}
+
+.login-section input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.show-hide {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.login-section button {
+  width: calc(100% - 20px); /* Espaço nas laterais */
+  margin: 10px; /* Espaço nas laterais */
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px; /* Bordas arredondadas */
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.register-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+}
+
+.register-section h2 {
+  margin-bottom: 24px;
+}
+
+.register-section a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 24px;
+  background-color: #0056b3;
+  border-radius: 20px; 
+}
+
+.register-section a:hover {
+  background-color: #004093;
+}
