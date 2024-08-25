@@ -114,7 +114,7 @@ const Login = () => {
     await new Promise(resolve => setTimeout(resolve, 500)); // Simulando espera de 500ms
 
     try {
-      const response = await fetch('http://api-todos-juntos.up.railway.app/user/login', {
+      const response = await fetch('api-todos-juntos.up.railway.app/user/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, password })
