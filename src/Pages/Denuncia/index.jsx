@@ -33,7 +33,7 @@ function Denuncia() {
     });
 
     try {
-      const response = await api.post('/denuncias', {
+      const response = await api.post('https://app-api-prd.up.railway.app/denuncias', {
         rua: inputRua.current.value,
         numero: inputNumero.current.value,
         bairro: inputBairro.current.value,

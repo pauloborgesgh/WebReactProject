@@ -3,11 +3,11 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000/;',
+  baseURL: 'https://app-api-prd.up.railway.app/;',
 });
 
 export const loginUser = (email, password) => {
-  return api.post('usuario/auth', { email, password });
+  return api.post('user/login', { email, password });
 };
 
 export const postData = (denuncias) => {

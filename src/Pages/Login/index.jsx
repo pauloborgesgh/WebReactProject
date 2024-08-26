@@ -1,6 +1,6 @@
 
 
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import './Login.css';
@@ -8,7 +8,7 @@ import './Login.css';
 const Login = () => {
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
-  const [showPassword, setShowPassword] = useState(false);
+  const [showPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
 
@@ -17,7 +17,7 @@ const Login = () => {
     await new Promise(resolve => setTimeout(resolve, 500)); // Simulando espera de 500ms
 
     try {
-      const response = await fetch('http://localhost:3000/user/login', {
+      const response = await fetch('https://app-api-prd.up.railway.app/user/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, password })

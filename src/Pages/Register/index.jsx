@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Swal from 'sweetalert2';
@@ -13,7 +13,7 @@ const Register = () => {
 
   const handleRegister = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/user', { email, name, cpf, password });
+      const response = await axios.post('https://app-api-prd.up.railway.app/user', { email, name, cpf, password });
       if (response.status === 201) {
         Swal.fire({
           title: 'Cadastro realizado com sucesso!',

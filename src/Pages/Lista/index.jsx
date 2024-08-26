@@ -1,6 +1,6 @@
 
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import swal from 'sweetalert';
 import api from '../../../Service/api.js';
 import Header from '../../Components/Header/index.jsx';
@@ -17,11 +17,12 @@ const Lista = () => {
   useEffect(() => {
     getUserId(); // Primeiro, obtém o ID do usuário
     getDenuncias(); // Depois, carrega as denúncias
+    userId
   }, []);
 
   const getUserId = async () => {
     try {
-      const response = await api.get('/user/id_usuario'); // Supondo que essa rota retorne o usuário logado
+      const response = await api.get('http://app-api-prd.up.railway.app/user/id_usuario'); // Supondo que essa rota retorne o usuário logado
       setUserId(response.data.id); // Armazena o ID do usuário no estado
       console.log(`IdUsuarioCriado`,IdUsuarioCriado)
     } catch (error) {
@@ -31,12 +32,12 @@ const Lista = () => {
 
   const getDenuncias = async () => {
     try {
-      const response = await api.get('/denuncias');
+      const response = await api.get('http://app-api-prd.up.railway.app/denuncias');
       setDenuncias(response.data);
       response.data.forEach(denuncia => {
         console.log(`Denúncia ID: ${denuncia.id}`);
         console.log(`Created By: ${denuncia.created_by}`);
-       ; // Mostra o ID do usuário após ele ser carregado
+       // Mostra o ID do usuário após ele ser carregado
       });
     } catch (error) {
       swal("Erro!", "Não foi possível carregar as denúncias.", "error");
@@ -71,7 +72,7 @@ const Lista = () => {
         // Se o usuário confirmar a exclusão
         if (result) {
             try {
-                const response = await api.delete(`/denuncias/${id}`, { data: { created_by: IdUsuarioCriado } }); // Envia o IdUsuarioCriado como `created_by`
+                const response = await api.delete(`https://app-api-prd.up.railway.app/denuncias/${id}`, { data: { created_by: IdUsuarioCriado } }); // Envia o IdUsuarioCriado como `created_by`
                 if (response.status === 200) {
                     swal("Denúncia deletada!", "A denúncia foi deletada com sucesso.", "success");
                     getDenuncias(); // Atualiza a lista após deletar
@@ -117,7 +118,7 @@ const saveEdit = async (id) => {
       // Se o usuário confirmar a edição
       if (result) {
           try {
-              const response = await api.put(`/denuncias/${id}`, editData);
+              const response = await api.put(`https://app-api-prd.up.railway.app/denuncias/${id}`, editData);
               if (response.status === 200) {
                   swal("Denúncia Atualizada!", "A denúncia foi atualizada com sucesso.", "success");
                   setEditId(null);
