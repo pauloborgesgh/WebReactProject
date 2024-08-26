@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import './info.css'; // Adapte o caminho do arquivo CSS conforme necessário
 import Header from '../../Components/Header';
 import Footer from '../../Components/Footer';

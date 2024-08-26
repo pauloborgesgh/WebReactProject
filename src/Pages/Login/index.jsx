@@ -3,7 +3,7 @@
 import  { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import './Login.css';
+import './login.css';
 
 const Login = () => {
   const [name, setName] = useState('');
