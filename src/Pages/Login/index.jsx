@@ -87,8 +87,8 @@ const Login = () => {
           </button>
         </div>
         <div className="register-section">
-          <h2>New Here?</h2>
-          <a href="/register">Create an Account</a>
+          <h2>Novo Por Aqui?</h2>
+          <a href="/Register">Crie Sua Conta</a>
         </div>
       </div>
     </div>
