@@ -8,8 +8,8 @@ function Sobre(){
 
     return(
         <><Header />
-        <div class="zero">
-        <div class="main-content">
+        <div className="zero">
+        <div className="main-content">
             <h2>Criação do Projeto</h2>
             <p>Nosso projeto foi implementado para atender às necessidades dos moradores do bairro, proporcionando uma plataforma para que eles possam interagir com as melhorias da comunidade e reportar quaisquer questões ou sugestões. A iniciativa visa promover um ambiente mais seguro e organizado, facilitando a comunicação entre os residentes e a administração local.</p>
 
@@ -34,7 +34,7 @@ function Sobre(){
         <Footer /></>
 
     )
-};
+}
 
 
 export default Sobre;
