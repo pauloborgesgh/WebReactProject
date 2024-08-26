@@ -3,7 +3,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://api-todos-juntos.up.railway.app',
+  baseURL: 'http://localhost:3000/;',
 });
 
 export const loginUser = (email, password) => {
