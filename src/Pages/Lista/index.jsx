@@ -22,7 +22,7 @@ const Lista = () => {
 
   const getUserId = async () => {
     try {
-      const response = await api.get('http://app-api-prd.up.railway.app/user/id_usuario'); // Supondo que essa rota retorne o usuário logado
+      const response = await api.get('https://app-api-prd.up.railway.app/user/id_usuario'); // Supondo que essa rota retorne o usuário logado
       setUserId(response.data.id); // Armazena o ID do usuário no estado
       console.log(`IdUsuarioCriado`,IdUsuarioCriado)
     } catch (error) {
@@ -32,7 +32,7 @@ const Lista = () => {
 
   const getDenuncias = async () => {
     try {
-      const response = await api.get('http://app-api-prd.up.railway.app/denuncias');
+      const response = await api.get('https://app-api-prd.up.railway.app/denuncias');
       setDenuncias(response.data);
       response.data.forEach(denuncia => {
         console.log(`Denúncia ID: ${denuncia.id}`);
@@ -118,7 +118,7 @@ const saveEdit = async (id) => {
       // Se o usuário confirmar a edição
       if (result) {
           try {
-              const response = await api.put(`https://app-api-prd.up.railway.app/denuncias/${id}`, editData);
+              const response = await api.put(`/https://app-api-prd.up.railway.app/denuncias/${id}`, editData);
               if (response.status === 200) {
                   swal("Denúncia Atualizada!", "A denúncia foi atualizada com sucesso.", "success");
                   setEditId(null);
