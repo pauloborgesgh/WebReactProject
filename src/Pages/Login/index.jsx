@@ -4,6 +4,7 @@ import  { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import './login.css';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [name, setName] = useState('');
@@ -88,7 +89,7 @@ const Login = () => {
         </div>
         <div className="register-section">
           <h2>Novo Por Aqui?</h2>
-          <a href="/register/">Crie Sua Conta</a>
+          <Link to="/register">Crie Sua Conta</Link> {/* Substituindo <a> por <Link> */}
         </div>
       </div>
     </div>
