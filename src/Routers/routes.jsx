@@ -6,7 +6,7 @@ import Info from '../Pages/Info/index.jsx';
 import Lista from '../Pages/Lista/index.jsx';
 import Denuncia from '../Pages/Denuncia/index.jsx';
 import Login from '../Pages/Login/index.jsx';
-import Register from '../Pages/Register/index.jsx';
+import Register from '../Register/index.jsx';
 import Sobre from '../Pages/Sobre/index.jsx';
 
 function AppRoutes() {

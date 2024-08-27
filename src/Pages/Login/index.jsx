@@ -89,7 +89,7 @@ const Login = () => {
         </div>
         <div className="register-section">
           <h2>Novo Por Aqui?</h2>
-          <Link to="/register">Crie Sua Conta</Link> {/* Substituindo <a> por <Link> */}
+          <Link to="/Register">Crie Sua Conta</Link> 
         </div>
       </div>
     </div>
