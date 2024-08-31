@@ -6,7 +6,7 @@ function Container() {
       <div className='content'>
         <div className='image-container'>
           
-          <img className='img-dengue' src="../dist/img/img_menu.jpg" alt="Prevenção contra a Dengue" />
+          <img className='img-dengue' src="../dist/assets/img/img_menu.jpg" alt="Prevenção contra a Dengue" />
           <br></br>
         </div>
         <div className='info-container'>
