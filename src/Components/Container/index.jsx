@@ -5,7 +5,9 @@ function Container() {
     <section className='container'>
       <div className='content'>
         <div className='image-container'>
-          <img className='img-dengue' src="../img/img_menu.jpg" alt="Prevenção contra a Dengue" />
+          
+          <img className='img-dengue' src="../dist/img/img_menu.jpg" alt="Prevenção contra a Dengue" />
+          <br></br>
         </div>
         <div className='info-container'>
           <p className='dengue-info'>

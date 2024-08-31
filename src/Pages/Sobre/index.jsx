@@ -23,9 +23,9 @@ function Sobre(){
 
             <h2>Galeria de Imagens</h2>
             <div className="image-gallery">
-                <img src="../img/img1.jpg" alt="Imagem do Projeto 1" />
-                <img src="../img/img2.jpeg" alt="Imagem do Projeto 2" />
-                <img src="../img/img3.jpg" alt="Imagem do Projeto 3" />
+                <img src="../../../dist/img/img1.jpg" alt="Imagem do Projeto 1" />
+                <img src="../../../dist/img/img2.jpeg" alt="Imagem do Projeto 2" />
+                <img src="../../../dist/img/img3.jpg" alt="Imagem do Projeto 3" />
             </div>
         </div>
     </div>
