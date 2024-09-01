@@ -1,6 +1,8 @@
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
-import img from "../../img/image2.jpeg"
+import image3 from "../../img/image3.png";
+import image2 from "../../img/image2.jpeg";
+import image1 from "../../img/image1.jpg";
 import './sobre.css'
 
 
@@ -24,9 +26,9 @@ function Sobre(){
 
             <h2>Galeria de Imagens</h2>
             <div className="image-gallery">
-                <img src={img} alt="Imagem do Projeto 1" />
-                <img src="../../../dist/assets/img/img2.jpeg" alt="Imagem do Projeto 2" />
-                <img src="/src/img/imagem1.jpg" alt="Imagem do Projeto 3" />
+                <img src={image3} alt="Imagem do Projeto 1" />
+                <img src={image2} alt="Imagem do Projeto 2" />
+                <img src={image1} alt="Imagem do Projeto 3" />
             </div>
         </div>
     </div>

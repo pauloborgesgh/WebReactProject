@@ -1,12 +1,14 @@
 import '../Container/container.css'
 
+
+
 function Container() {
   return (
     <section className='container'>
       <div className='content'>
         <div className='image-container'>
           
-          <img className='img-dengue' src="../dist/assets/img/img_menu.jpg" alt="Prevenção contra a Dengue" />
+        
           <br></br>
         </div>
         <div className='info-container'>
